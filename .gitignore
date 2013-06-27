@@ -1,0 +1,4 @@
+lib/*
+*.as3proj
+obj/*
+bin/*
