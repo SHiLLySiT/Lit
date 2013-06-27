@@ -1,6 +1,11 @@
 #Lit
 
-A simple lighting engine for FlashPunk
+A simple lighting engine for FlashPunk. 
+
+#Features
+* only the lights on screen are rendered
+* supports different light images
+* supports rotating lights
 
 ## Usage
 Create a new lighting object and add it to the world:
