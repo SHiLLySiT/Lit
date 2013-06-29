@@ -5,6 +5,8 @@ package
 	import net.flashpunk.FP;
 	import net.flashpunk.graphics.Backdrop;
 	import net.flashpunk.graphics.Image;
+	import net.flashpunk.graphics.Text;
+	import net.flashpunk.utils.Draw;
 	import net.flashpunk.utils.Input;
 	import net.flashpunk.utils.Key;
 	import net.flashpunk.World;
@@ -52,6 +54,10 @@ package
 			image.centerOO();
 			mouseLight = new Light(0, 0, image, 4, 0.8);
 			lighting.add(mouseLight);
+			
+			// info
+			var text:Text = new Text("WSAD: move camera\nR: restart world\nMOUSE: move mouse light")
+			addGraphic(text, -1000, 0, 32)
 		}
 		
 		override public function update():void 
